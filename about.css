@@ -1,0 +1,48 @@
+.about{
+    display:flex;
+    justify-content:  center;
+align-items:center;
+gap:20px;
+background:#fff8f0;
+padding:60px;
+flex-wrap: wrap;
+
+}
+
+.about-image img{
+width:100px;
+border-radius:15px;
+box-shadow:0 5x;
+}
+
+.about-content{
+    max-width: 500px;
+}
+
+.about-content h1{
+       color: #ff6600;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+.about-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:20px;
+    color:#302f2f;
+
+}
+.about-content button{
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.about-content button:hover{
+    background: #e65c00;
+}
