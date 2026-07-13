@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff8f3;
+}
+
+/* Navigation */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    background:white;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    z-index:100;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    color:#ff6b81;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 18px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#444;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ff6b81;
+}
+
+.search-box input{
+    padding:10px 15px;
+    border-radius:25px;
+    border:1px solid #ddd;
+    outline:none;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:url("images/background.jpg") center/cover;
+    display:flex;
+    align-items:center;
+    padding-left:8%;
+}
+
+.hero-content{
+    width:500px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:rgb(18, 17, 17);
+}
+
+.hero p{
+    color:rgb(15, 14, 14);
+    margin:20px 0;
+    line-height:28px;
+    font-size:18px;
+}
+
+.hero button{
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:#ff6b81;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:#ff4d6d;
+}
+
+/* Cards */
+
+.cards{
+    width:90%;
+    margin:70px auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.4s;
+    margin-bottom:30px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    margin-top:15px;
+}
+
+.card p{
+    text-align:center;
+    padding:15px;
+    color:#666;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin:15px 0;
+}
+
+.hero{
+    text-align:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.cards{
+    justify-content:center;
+}
+
+.card{
+    width:90%;
+}
+
+}
